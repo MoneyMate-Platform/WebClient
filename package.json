@@ -1,14 +1,14 @@
 {
   "name": "money-mate",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && npm run build:css",
     "lint": "eslint .",
     "preview": "vite preview",
-    "build:css": "tailwindcss build -i src/index.css -o dist/index.css",
+    "build:css": "tailwindcss build -i src/index.css -o dist/index.css --minify",
     "fmt": "prettier --write ."
   },
   "dependencies": {
