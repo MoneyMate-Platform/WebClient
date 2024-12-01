@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:css": "tailwindcss build src/styles.css -o dist/styles.css",
+    "fmt": "prettier --write ."
   },
   "dependencies": {
     "i18next": "^24.0.2",
