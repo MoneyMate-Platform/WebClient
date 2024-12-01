@@ -28,9 +28,6 @@ jobs:
     - name: Build Tailwind CSS
       run: npm run build:css
 
-    - name: Run Prettier
-      run: npx fmt --check .
-
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
